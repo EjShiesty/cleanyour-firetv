@@ -3,8 +3,10 @@
 # Undo with tools\restore.ps1 <same file>.
 #
 # Usage: tools\disable.ps1 -TvHost 192.168.1.50 examples\xiaomi-mi-tv-4a\debloat.txt
+#        tools\disable.ps1 -TvHost 192.168.1.50 -OnlyPackage com.example.promo examples\my-tv\debloat.txt
 param(
     [Parameter(Mandatory = $true, Position = 0)][string]$List,
+    [string]$OnlyPackage,
     [string]$TvHost = $env:TV_HOST
 )
 $ErrorActionPreference = 'Stop'
@@ -13,7 +15,6 @@ $OutputEncoding = New-Object System.Text.UTF8Encoding $false
 $repo = Split-Path -Parent $PSScriptRoot
 $List = (Resolve-Path $List).Path
 $py = Join-Path $repo 'tools\venv\Scripts\python.exe'
-if (-not (Test-Path $py)) { throw 'run: python -m venv tools\venv; tools\venv\Scripts\python.exe -m pip install -r tools\requirements.txt' }
 if (-not $TvHost) { throw 'pass -TvHost <tv ip> or set $env:TV_HOST' }
 $env:TV_HOST = $TvHost
 
@@ -23,6 +24,11 @@ $bad = @($pkgs | Where-Object { $_ -notmatch '^[A-Za-z_][A-Za-z0-9_]*(\.[A-Za-z0
 if ($bad.Count -gt 0) {
     throw "refusing $List, not a package name: $($bad -join ', ')"
 }
+if ($OnlyPackage) {
+    if ($OnlyPackage -notin $pkgs) { throw "-OnlyPackage is not in $List`: $OnlyPackage" }
+    $pkgs = @($OnlyPackage)
+}
+if (-not (Test-Path $py)) { throw 'run: python -m venv tools\venv; tools\venv\Scripts\python.exe -m pip install -r tools\requirements.txt' }
 # A Wi-Fi network saved during the first-run wizard belongs to setupwraith, and Android deletes it when
 # setupwraith is disabled. Skip it while it owns the saved network; `$env:FORCE_SETUPWRAITH=1` overrides.
 $setup = 'com.google.android.tungsten.setupwraith'

@@ -1,0 +1,13 @@
+# Insignia NS-42F201NA23, AFTALMO, Fire OS 7.7.1.7 (PS7717/5741), Android 9.
+# Verified on one TV after reboot. This is a conservative seven-package owner-specific list.
+# Review each installed package, its permissions, and your preferences before using it on any TV,
+# including another NS-42F201NA23 or a different firmware. Use one-package batches and a backup.
+# Original Amazon Home, Appstore, OTA, TV inputs, casting, Alexa, and streaming apps were kept.
+
+com.amazon.sneakpeek                 # Amazon Home advertising previews
+com.amazon.hybridadidservice         # advertising identifier service
+com.amazon.shoptv.client             # optional Amazon shopping client
+com.amazon.shoptv.firetv.client      # optional Fire TV shopping tile
+com.amazon.tv.democontent.provider   # retail demonstration content
+com.amazon.tv.acr                    # automatic content recognition telemetry
+com.amazon.wirelessmetrics.service   # wireless analytics

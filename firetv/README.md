@@ -15,6 +15,8 @@ model and firmware.
 | Launcher config (dock, greeting, columns) | [`launcher/app/src/main/res/values/config.xml`](../launcher/app/src/main/res/values/config.xml) |
 | Cinejoy kiosk app | [`firetv/cinejoy/`](cinejoy/) |
 
+For a smaller Windows setup that preserves Alexa, phone casting, AirPlay, Live TV, and the owner's five streaming apps, see the [Insignia NS-42F201NA23 case](../examples/insignia-ns-42f201na23/README.md). To adapt that method to another TV, use the [conservative prompt](PROMPT-CONSERVATIVE.md). Its package list is specific to Fire OS 7.7.1.7; this README's full installer and 108-package list describe a different owner's preferences.
+
 ## Setting up another Fire TV
 
 1. On the TV: Settings > My Fire TV > About > press OK on the TV's name 7 times, then back > Developer options >

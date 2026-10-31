@@ -101,7 +101,7 @@ Tested lists from contributors, one folder per model in [`examples/`](examples/)
 **TCL** 45 · **Xiaomi** 24 · **Sony** 23 · **Philips** 12 · **Hisense** 8 · **Skyworth** 8 · **Amazon Fire TV** 7 ·
 **Panasonic** 3 · **Thomson** 3 · **BenQ** 2 · **CHiQ** 2 · **FFalcon** 2 · **Google** 2 · **Haier** 2 · **Hitachi** 2 ·
 **Kalley** 2 · **NVIDIA Shield** 2 · **OnePlus** 2 · **onn** 2 · **Redmi** 2 · **Toshiba** 2 · **Vu** 2 ·
-AiPro2K · AIWA · Artel · Caxium · Cecotec · Challenger · Compac · Dialog · EKO · Freebox · Insignia Fire TV · JVC ·
+AiPro2K · AIWA · Artel · Caxium · Cecotec · Challenger · Compac · Dialog · EKO · Freebox · **Insignia Fire TV** 2 · JVC ·
 Karbonn · Kogan · Motorola · MTC · Noblex · Nokia · OK. · Polytron · PRISM+ · RCA · Sankey · SANYO · SHARP ·
 Tele System · Verizon · Vidda · Vision ·
 BYINTEK, JMGO, Portronics, Stellamore, Wanbo and XGIMI projectors
@@ -150,6 +150,7 @@ BYINTEK, JMGO, Portronics, Stellamore, Wanbo and XGIMI projectors
 | Hisense U75 (hengshan, MediaTek), Latin America | Google TV 12 |
 | Hitachi 65QLEDSM20 (MTC, bangbae, MediaTek m7322), Australia | Android TV 11 |
 | Hitachi CDH-LE32SMART21 (TCL-built C06, C06_2K_GB, MediaTek MT9221, 1 GB), Argentina | Android TV 11 |
+| Insignia 42" F20 Fire TV (NS-42F201NA23, AFTALMO) | Fire OS 7.7.1.7 / Android 9 |
 | Insignia 55" F30 4K Fire TV (NS-55F301NA25, AFTDCT31, duckie) | Fire OS 7 / Android 9 |
 | JMGO N1S projector (K80A, holan, MediaTek m7332), Australia | Google TV 14 |
 | JVC Android TV (Vestel-built, BARTU_Jvc, menlo, MediaTek mt5867), Spain | Android TV 11 |
